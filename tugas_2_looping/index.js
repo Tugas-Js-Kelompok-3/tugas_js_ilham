@@ -1,4 +1,4 @@
-console.log('No 1')
+// no1
 
 const laptop =  ["Dell","Lenovo","Acer","Asus"];
 
