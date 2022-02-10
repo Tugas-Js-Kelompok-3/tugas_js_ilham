@@ -9,40 +9,23 @@ minMax([1])
 
 
 // soal 2 
-function dropright(num) {
-    const removed = num.filter(el => {
-        return el < 3
-    })
-    console.log(removed)
+function dropright(arr,drop = 1) {
+    const reverse = arr.reverse()
+    const result = reverse.slice(drop)
+    console.log(result.reverse())
 }  
 dropright([1, 2, 3])
-
-function dropright1(num) {
-    const removed = num.filter(el => {
-        return el < 2
-    })
-    console.log(removed)
-}  
-dropright1([1, 2, 3],2)
-
-function dropright2(num) {
-    const removed = num.filter(el => {
-        return el < 1
-    })
-    console.log(removed)
-}  
-dropright2([1, 2, 3],5)
-
-function dropright3(num) {
-    const removed = num.filter(el => {
-        return el > 0
-    })
-    console.log(removed)
-}  
-dropright3([1, 2, 3],0)
+dropright([1, 2, 3],2)
+dropright([1, 2, 3],5)
+dropright([1, 2, 3],0)
 
 // soal 3
-// function findAverage(array) {
-//     let average = 0;
-//     for
-// }
+function mean(angka) {
+    const rata = angka.reduce((a,b) => a+b,0) / angka.length
+    console.log(rata);
+}
+mean([1, 0, 4, 5, 2, 4, 1, 2, 3, 3, 3])
+
+mean([2, 3, 2, 3])
+
+mean([3, 3, 3, 3, 3])
