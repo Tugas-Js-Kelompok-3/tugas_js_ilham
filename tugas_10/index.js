@@ -22,7 +22,7 @@ dropright([1, 2, 3],0)
 // soal 3
 function mean(angka) {
     const rata = angka.reduce((a,b) => a+b,0) / angka.length
-    console.log(rata);
+    console.log(rata.toPrecision(3));
 }
 mean([1, 0, 4, 5, 2, 4, 1, 2, 3, 3, 3])
 
